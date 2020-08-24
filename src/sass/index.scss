@@ -1,0 +1,1325 @@
+@import "second";
+
+$var: 23px;
+
+@mixin buttons($basicBorder: 1px, $gradient1:#fff, $gradient2:#d8dee7){
+
+  button {
+    border:$basicBorder solid #acbed3;
+    //brings in Compass' background-image mixin:  http://compass-style.org/reference/compass/css3/images/
+    padding:3px 14px;
+    font-size:12px;
+    color:#3b557d;
+    //brings in Compass' border-radius mixin: http://compass-style.org/reference/compass/css3/border_radius/
+    cursor:pointer;
+
+    //& attribute adds
+
+    &.primary {
+      border:2px solid #3b557d;
+      padding:5px 15px;
+      //requires a $border-radius variable
+    }
+    &.disabled {
+      opacity: .8;
+    }
+    &:hover {
+    }
+  }
+}
+
+.host {
+  width: $var;
+  height: 23px;
+  border: 2px solid;
+  display: flex;
+  background: red;
+
+  @include buttons();
+
+  .first-block {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+
+  .first-block-1 {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+
+  .first-block-2 {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+}
+
+.host-1 {
+  width: $var;
+  height: 23px;
+  border: 2px solid;
+  display: flex;
+  background: red;
+
+  @include buttons();
+
+  .first-block {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+
+  .first-block-1 {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+
+  .first-block-2 {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+}
+
+.host-3 {
+  width: $var;
+  height: 23px;
+  border: 2px solid;
+  display: flex;
+  background: red;
+
+  @include buttons();
+
+  .first-block {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+
+  .first-block-1 {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+
+  .first-block-2 {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+}
+
+.host-4 {
+  width: $var;
+  height: 23px;
+  border: 2px solid;
+  display: flex;
+  background: red;
+
+  @include buttons();
+
+  .first-block {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+
+  .first-block-1 {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+
+  .first-block-2 {
+    width: $var;
+    height: 20px;
+    background: red;
+
+    @include buttons();
+
+    .sub-first-block {
+      width: $var;
+      height: 23px;
+      border: 2px solid;
+      display: flex;
+      background: red;
+
+      @include buttons();
+    }
+  }
+}
+
+.some-class {
+
+  .host {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+  .host-1 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+
+  .host-3 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+  .host-4 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+}
+
+.some-class-1 {
+
+  .host {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+  .host-1 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+
+  .host-3 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+  .host-4 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+}
+
+.some-class-2 {
+
+  .host {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+  .host-1 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+
+  .host-3 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+  .host-4 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+}
+
+.some-class-3 {
+
+  .host {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+  .host-1 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+
+  .host-3 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+
+  .host-4 {
+    width: $var;
+    height: 23px;
+    border: 2px solid;
+    display: flex;
+    background: red;
+
+    @include buttons();
+
+    .first-block {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-1 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+
+    .first-block-2 {
+      width: $var;
+      height: 20px;
+      background: red;
+
+      @include buttons();
+
+      .sub-first-block {
+        width: $var;
+        height: 23px;
+        border: 2px solid;
+        display: flex;
+        background: red;
+
+        @include buttons();
+      }
+    }
+  }
+}
